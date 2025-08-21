@@ -7,7 +7,7 @@
         <methods>
           <include name="startDriver"/>
           <include name="closeDrier"/>
-          <include name="CheckoutwithDirectbanktransfer"/>
+          <include name="test"/>
         </methods>
       </class> <!-- masterSeleniumFramework.masterSeleniumFramework.firstTest -->
     </classes>
