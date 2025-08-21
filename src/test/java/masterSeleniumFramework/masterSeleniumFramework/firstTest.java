@@ -48,7 +48,7 @@ public void CheckoutwithDirectbanktransfer() throws IOException, InterruptedExce
 	
 	}
 @Test(priority = 2 )
-public void CheckoutwithCOD() {
+public void CheckoutwithCOD() throws InterruptedException {
 	BasePage basePage = new BasePage(driver);
 	basePage.loadPage("https://askomdch.com/");
 	HomePage homePage = new HomePage(driver);
