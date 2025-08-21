@@ -1,0 +1,9 @@
+{
+	"firstName" : "Aman",
+	"lastName" : "Deep",
+	"addressLine1" : "123, MG Road",
+	"addressLine2" : "Near Metro Station",
+	"city" : "Bangalore",
+	"post" : "560001",
+	"email" : "aman.deep@example.com"
+}
