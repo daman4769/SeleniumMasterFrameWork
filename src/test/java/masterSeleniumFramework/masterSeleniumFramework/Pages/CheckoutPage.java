@@ -95,7 +95,8 @@ public void addAdddress2(billingAdressDetails BillingAdressDetails) {
 	  driver.findElement(placeOrderButton).click();
   }
   
-  public void checkoutwithCOD() {
+  public void checkoutwithCOD() throws InterruptedException {
+	  Thread.sleep(2000);
 	  ab.waitforElementToBeClickble(driver, CODRadioBtn);
 	  driver.findElement(CODRadioBtn).click();
 	  ab.waitForVisibilityOfEkemente(driver, placeOrderButton);
