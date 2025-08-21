@@ -6,8 +6,8 @@
       <class name="masterSeleniumFramework.masterSeleniumFramework.firstTest">
         <methods>
           <include name="startDriver"/>
-          <include name="CheckoutwithCOD"/>
           <include name="closeDrier"/>
+          <include name="CheckoutwithDirectbanktransfer"/>
         </methods>
       </class> <!-- masterSeleniumFramework.masterSeleniumFramework.firstTest -->
     </classes>
