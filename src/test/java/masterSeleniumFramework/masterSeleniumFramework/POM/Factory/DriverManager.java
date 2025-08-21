@@ -11,7 +11,9 @@ public class DriverManager {
 	public WebDriver initilizedDriver() {
 //		ChromeOptions options = new ChromeOptions();
 //		options.addArguments("--headless=new");
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--start-maximized");
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		return driver;
