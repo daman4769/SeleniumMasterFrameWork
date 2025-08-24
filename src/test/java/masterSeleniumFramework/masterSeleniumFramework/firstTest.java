@@ -43,7 +43,6 @@ public void CheckoutwithDirectbanktransfer() throws IOException, InterruptedExce
      Assert.assertEquals(cartpage.getProductName(), PropertieUtils.getProperty("product"));
      CheckoutPage checkoutPage = cartpage.goToCheckoutPage();
      checkoutPage.addAdddress2(BillingAdressDetails);
-     Thread.sleep(5000);
 	checkoutPage.checkoutwithDirectBankTransfer();
 	
 	}

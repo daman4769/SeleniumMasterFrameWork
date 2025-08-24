@@ -50,7 +50,7 @@
             <version>3.0.0</version> <!-- Use the latest stable version -->
             <configuration>
                 <suiteXmlFiles>
-                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                    <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>           
                 </suiteXmlFiles>
             </configuration>
         </plugin>
@@ -70,10 +70,7 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.13.0</version>
         </plugin>
-        <plugin>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.3.0</version>
-        </plugin>
+      
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.4.2</version>

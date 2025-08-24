@@ -15,23 +15,29 @@ import utils.propertieUtils;
 public class DriverManager {
 
     WebDriver driver;
+    String browser;
+    public DriverManager(String browser) {
+    	this.browser = browser;
+    }
+   
+    public WebDriver initilizedDriver() throws IOException {   
   
-
-    public WebDriver initilizedDriver() throws IOException {
-
-    	
       
+//        
+//        String localbrowser = (System.getProperty("Browser") != null) 
+//                ? System.getProperty("Browser") 
+//                : propertieUtils.getProperty("browser");
         
-        String browser = (System.getProperty("Browser") != null) 
+        String localbrowser = (System.getProperty("Browser") != null) 
                 ? System.getProperty("Browser") 
-                : propertieUtils.getProperty("browser");
+                : browser;
 
-        if (browser.equalsIgnoreCase("chrome")) {
+        if (localbrowser.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--start-maximized");
             driver = new ChromeDriver(options);
         }
-        else if(browser.equalsIgnoreCase("edge")) {
+        else if(localbrowser.equalsIgnoreCase("edge")) {
         	 System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"/src/msedgedriver.exe");
         	driver = new EdgeDriver();
         }
